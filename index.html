@@ -6,15 +6,24 @@
     <!-- tailwind and daisyui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- poppins font by google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Tailwind DaisyUI</title>
+    <style>
+        .font-poppins{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="font-poppins ">
     
 
-<header>
-<nav>
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
+<header class=" bg-gray-700">
+<nav class="md:max-w-7xl md:mx-auto">
+    <div class="navbar">
+        <div class="flex-1">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
@@ -32,31 +41,31 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base font-medium">
               <li><a>Home</a></li>
               <li><a>Shop</a></li>
               <li><a>News</a></li>
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <a class="btn btn-ghost normal-case text-4xl text-cyan-50">Biker Zone</a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul class="menu menu-horizontal px-1 text-base font-semibold text-cyan-50">
             <li><a>Home</a></li>
               <li><a>Shop</a></li>
               <li><a>News</a></li>
               <li><a>Contact</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn btn-outline btn-secondary">Login</a>
+        <div class="">
+          <a class="btn btn-outline btn-secondary font-semibold">Login</a>
         </div>
       </div>
 </nav>
 </header>
 
-<main>
+<main class="md:container md:mx-auto">
 
 </main>
 
